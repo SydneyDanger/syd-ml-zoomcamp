@@ -22,7 +22,7 @@ prediction = model.predict_proba(X_new)[0, 1]
 print(f"Prediction: {prediction}")
 '''
 
-app = Flask('credit')
+app = Flask('credit') # determines if customers recieve credit
 
 @app.route('/predict', methods=['POST'])
 def predict():
